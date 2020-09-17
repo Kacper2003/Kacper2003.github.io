@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #000;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.icon {
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -150px;
+    top: 50%;
+    margin-top: -150px;
+}
+.container .icon path {
+    fill: transparent;
+    stroke-width: 10;
+    stroke: darkred;
+}
+.container .icon.heart path {
+    stroke-dasharray: 1560;
+    stroke-dashoffset: 0;
+    animation: animate-heart 3s linear forwards;
+}
+
+@keyframes animate-heart
+{
+    0%{
+        stroke-dashoffset: 0;
+    }
+    40%{
+        stroke-dashoffset: 1560;
+    }
+    80%{
+        stroke-dashoffset: 3120;
+        fill: transparent;
+    }
+    100%{
+        stroke-dashoffset: 3120;
+        fill:red;
+    }
+
+}
