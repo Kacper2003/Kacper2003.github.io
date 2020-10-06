@@ -1,0 +1,95 @@
+body{
+ background-color: silver;
+}
+
+input{
+  display: none;
+}
+
+.listi{
+  display: none;
+}
+
+input:checked ~ .listi{
+  display: block;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.dropdown-content {
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding-left: 0;
+}
+
+ul li a:link {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li a:hover {
+  background-color: #ddd;
+}
+
+ul li a:visited {
+  color: black;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer a:hover {
+  background-color: #aaa;
+}
+
+@media only screen and (min-width: 48em) {
+  
+  .listi{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 10em;
+    display: block;
+  }
+
+  .dropdown-content {
+    width: 100%;
+  }
+
+  ul {
+    background: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    display: inline-block;
+  }
+}
