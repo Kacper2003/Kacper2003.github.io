@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption>Statement Summary</caption>
+        <thead>
+          <tr>
+            <th scope="col">Brand</th>
+            <th scope="col">Model</th>
+            <th scope="col">Year</th>
+            <th scope="col">Horse power</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="Brand">Suzuki</td>
+            <td data-label="Model">Swift</td>
+            <td data-label="Year">2016</td>
+            <td data-label="Horse power">96</td>
+          </tr>
+          <tr>
+            <td data-label="Brand">BMW</td>
+            <td data-label="Model">M5 E28</td>
+            <td data-label="Year">1985</td>
+            <td data-label="Horse power">286</td>
+          </tr>
+          <tr>
+            <td data-label="Brand">Toyota</td>
+            <td data-label="Model">RAV4</td>
+            <td data-label="Year">2016</td>
+            <td data-label="Horse power">152</td>
+          </tr>
+          <tr>
+            <td data-label="Brand">Nissan</td>
+            <td data-label="Model">Silvia S15</td>
+            <td data-label="Year">2001</td>
+            <td data-label="Horse power">230</td>
+          </tr>
+        </tbody>
+      </table>
+      <form method="POST" action="#">
+        <label>Nafn:</label><br>
+        <input type="text" name="nafn" required>
+        <br>
+        <label>Símanúmer:</label><br>
+        <input type="number" name="simi" required>
+        <br>
+        <label>Email:</label><br>
+        <input type="email" name="email" required>
+        <br>
+        <label>Dagsetning:</label><br>
+        <input type="date" name="dagur" required>
+        <br>
+
+        <input type="checkbox" checked> Suzuki
+        <br>
+        <input type="checkbox"> BWM
+        <br>
+        <input type="checkbox"> Toyota
+        <br>
+        <input type="checkbox"> Nissan
+        <br>
+
+        <input type="radio" name="day" value="Föstudagur" checked> Föstudagur<br>
+        <input type="radio" name="day" value="Laugardagur"> Laugaradagur<br>
+        <input type="radio" name="day" value="Sunnudagur"> Sunnudagur<br>
+
+        <select name="day">
+          <option value="Föstudagur" selected>Föstudagur</option>
+          <option value="Föstudagur">Laugardagur</option>
+          <option value="Föstudagur">Sunnudagur</option>
+        </select>
+
+        <input type="submit" value="Skrá">
+      </form>
+</body>
+</html>
